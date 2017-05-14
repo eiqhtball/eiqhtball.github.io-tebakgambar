@@ -1,0 +1,144 @@
+body{
+	overflow: hidden;
+}
+
+.header{
+	position: absolute;
+	height: 45px;
+	width: 100%;
+	background-color: #0091EA;
+	z-index: 4;
+	padding-left: 5px;
+	transition: all 0.5s;
+}
+.header:hover{
+	background-color: #2ECC71;
+}
+.header img{
+	width: 50px;
+	height: 50px;
+}
+.header a{
+	font-size: 30px;
+	color: #34495e;
+	font-family: "Arial Black";
+}
+/*Right Content*/
+.right-content{
+	background-color: #42A5F5;
+	margin-top: 45px;
+	border-left: 3px solid #34495E;
+	width: 100%;
+	height: 100vh;
+}
+/*Facebook*/
+.fbshare{
+	background-color: #00B0FF;
+	transition: all 0.5s;
+}
+.fbshare:hover{
+	background-color: #00BFA5;
+}
+.textfb{
+	padding-top: 10px;
+	font-size: 15px;
+	color: #263238;
+}
+.tombolfb{
+}
+
+/*Twitter*/
+.twitt{
+	padding-top: 10px;
+	background-color: #40C4FF;
+	transition: 0.5s;
+}
+.twitt:hover{
+	background-color: #1DE9B6; 
+}
+.texttwitt{
+	font-size: 15px;
+	color: #263238;
+}
+.tomboltwitt{
+	text-align: left;
+}
+
+/*Main Content*/
+.main-content{
+	padding-top: 45px;
+	width: 100vh;
+	height: 100vh;
+}
+
+.side-nav{
+	position: absolute;
+	font-size: 15px;
+	font-family: "Arial Black";
+	width: 100%;
+	background-color: #34495E;
+	height: 100vh;
+	padding-top: 45px;
+	z-index: 3;
+}
+.side-nav ul{
+	list-style: none;;
+	padding: 0;
+	margin: 0;
+}
+.side-nav ul li{
+	padding: 20px 10px;
+	border-bottom: 1px solid #333;
+	border-right: 5px solid #F39C12;
+	transition: all 0.3s;
+}
+.side-nav ul li:hover{
+	background-color: #2C3E50;
+	text-align: center;
+	color: #1ABC9C;
+}
+.side-nav ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.side-nav ul li a span{
+	color: #95A5A6;
+}
+.side-nav ul li a span:hover{
+	color: #1ABC9C;
+}
+
+@media screen and (min-width: 600px){
+	.side-nav{
+		width: 50px;
+	}
+	.side-nav ul li{
+		text-align: center;
+	}
+	.side-nav ul li span:nth-child(2){
+		display: none;
+	}
+	.side-nav ul li i{
+		font-size: 26px;
+	}/*
+	.main-content{
+		margin-left: 80px;
+	}*/
+}
+@media screen and (min-width: 1000px){
+	.side-nav{
+		width: 200px;
+	}
+	.side-nav ul li{
+		text-align: left;
+	}
+	.side-nav ul li span:nth-child(2){
+		display: inline;	
+	}
+	.side-nav ul li i{
+		font-size: 16px;
+	}/*
+	.main-content{
+		margin-left: 200px;
+	}*/
+}
