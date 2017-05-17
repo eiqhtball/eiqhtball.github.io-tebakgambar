@@ -1,12 +1,12 @@
-body{
-	overflow: hidden;
+html, body{
+	overflow-x: hidden; 
+	overflow-y: hidden;
 }
-
 .header{
 	position: absolute;
 	height: 45px;
 	width: 100%;
-	background-color: #0091EA;
+	background-color: #29C5FF;
 	z-index: 4;
 	padding-left: 5px;
 	transition: all 0.5s;
@@ -23,52 +23,100 @@ body{
 	color: #34495e;
 	font-family: "Arial Black";
 }
+/*------------------------------------*/
+
+
+.img-size{
+	float: left;
+	margin-top: 10px;
+	margin-left: 25px;
+	width: 175px;
+	height: 175px;
+	border-radius: 100%;
+}
+.nim{
+	font-size: 16px;
+}
+
+/*HowTo Text*/
+.howto-text p{
+	margin-right: 40px;
+	margin-left: 40px;
+	text-align: justify;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+
+/*Description Text*/
+.description-text{
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: justify;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 18px;
+}
 /*Right Content*/
 .right-content{
-	background-color: #42A5F5;
+	border-left: 5px solid #F39C12;
+	border-bottom: 5px solid #F39C12;
+	background-color: #34495E;
 	margin-top: 45px;
-	border-left: 3px solid #34495E;
 	width: 100%;
 	height: 100vh;
+	position: relative;
+}
+.right-content li{
+	list-style: none;
 }
 /*Facebook*/
 .fbshare{
-	background-color: #00B0FF;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
 	transition: all 0.5s;
 }
 .fbshare:hover{
 	background-color: #00BFA5;
 }
 .textfb{
-	padding-top: 10px;
+	color: white;
 	font-size: 15px;
-	color: #263238;
 }
 .tombolfb{
 }
 
 /*Twitter*/
 .twitt{
-	padding-top: 10px;
-	background-color: #40C4FF;
-	transition: 0.5s;
+	padding-top: 5px;
+	font-size: 20px;
+	padding-bottom: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	transition: all 0.5s;
 }
 .twitt:hover{
 	background-color: #1DE9B6; 
 }
 .texttwitt{
 	font-size: 15px;
-	color: #263238;
+	color: white;
 }
 .tomboltwitt{
 	text-align: left;
 }
+/*------------------------------------*/
+
 
 /*Main Content*/
 .main-content{
 	padding-top: 45px;
-	width: 100vh;
+	width: 100%;
 	height: 100vh;
+	position: relative;
 }
 
 .side-nav{
@@ -120,10 +168,7 @@ body{
 	}
 	.side-nav ul li i{
 		font-size: 26px;
-	}/*
-	.main-content{
-		margin-left: 80px;
-	}*/
+	}
 }
 @media screen and (min-width: 1000px){
 	.side-nav{
